@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1ff36;
+    font-family: verdana;
+}
+
+
+
+.kontener {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../jezioro.jpg");
+    background-size: 690px 568px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    position: relative;
+    text-decoration: none;
+    border: 2px solid transparent;
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 24px;
+    padding-top: 40%;
+    color: #262626;
+}
+
+span {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 700px;
+    height: 300px;
+    font-size: 24px;
+    padding-top: 40%;
+    color: transparent;
+    top: 0;
+    left: -2px;
+    
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 348px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+h1:hover:before {
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        width: 25%;
+        height: 0;
+        border-top-color: blue;
+    }
+    25% {
+        width: 350px;
+        height: 0;
+        border-top-color: blue;
+    }
+    50% {
+        width: 50%;
+        height: 0;
+        border-top-color: blue;
+        border-right-color: blue;
+    }
+    75% {
+        width: 50%;
+        height: 25%;
+        border-top-color: blue;
+        border-right-color: blue;
+    }
+    100% {
+        height: 50%;
+        width: 50%;
+        border-right-color: blue;
+        border-top-color: blue;
+    }
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 348px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+h1:hover:after {
+    animation: animate2 1s linear forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        width: 25%;
+        height: 0;
+        border-top-color: blue;
+    }
+    25% {
+        width: 50%;
+        height: 0;
+        border-top-color: blue;
+    }
+    50% {
+        width: 50%;
+        height: 0;
+        border-top-color: blue;
+        border-left-color: blue;
+    }
+    75% {
+        width: 50%;
+        height: 25%;
+        border-top-color: blue;
+        border-left-color: blue;
+    }
+    100% {
+        height: 50%;
+        width: 50%;
+        border-left-color: blue;
+        border-top-color: blue;
+    }
+}
+
+span:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 348px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+span:hover:before {
+    animation: animate3 1s linear forwards;
+}
+
+@keyframes animate3 {
+    0% {
+        width: 25%;
+        height: 0;
+        border-bottom-color: blue;
+    }
+    25% {
+        width: 50%;
+        height: 0;
+        border-bottom-color: blue;
+    }
+    50% {
+        width: 50%;
+        height: 0;
+        border-bottom-color: blue;
+        border-right-color: blue;
+    }
+    75% {
+        width: 50%;
+        height: 25%;
+        border-bottom-color: blue;
+        border-right-color: blue;
+    }
+    100% {
+        height: 50%;
+        width: 50%;
+        border-right-color: blue;
+        border-bottom-color: blue;
+    }
+}
+
+span:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 348px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+span:hover:after {
+    animation: animate4 1s linear forwards;
+}
+
+@keyframes animate4 {
+    0% {
+        width: 25%;
+        height: 0;
+        border-bottom-color: blue;
+    }
+    25% {
+        width: 50%;
+        height: 0;
+        border-bottom-color: blue;
+    }
+    50% {
+        width: 50%;
+        height: 0;
+        border-bottom-color: blue;
+        border-left-color: blue;
+    }
+    75% {
+        width: 50%;
+        height: 25%;
+        border-bottom-color: blue;
+        border-left-color: blue;
+    }
+    100% {
+        height: 50%;
+        width: 50%;
+        border-left-color: blue;
+        border-bottom-color: blue;
+    }
+}
