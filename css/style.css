@@ -3,6 +3,7 @@ body {
     padding: 0;
     background: #f1ff36;
     font-family: verdana;
+    color: #fff;
 }
 
 
@@ -12,7 +13,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("../jezioro.jpg");
+    background: url("../img/jezioro.jpg");
     background-size: 690px 568px;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +31,45 @@ h1 {
     font-size: 24px;
     padding-top: 40%;
     color: #262626;
+    
 }
+
+.napis { 
+    font-size: 30px;
+    text-transform: capitalize;
+    width: 700px;
+    height: 55px;
+    background-color: transparent;    
+    transition: all 3s;    
+    position: relative;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+    position: fixed;
+}
+
+.napis p {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    
+    
+}
+
+h1:hover + .napis, .napis:hover, span:hover + .napis {
+    width: 700px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 50px;
+}
+
+
 
 span {
     position: absolute;
@@ -41,8 +80,7 @@ span {
     padding-top: 40%;
     color: transparent;
     top: 0;
-    left: -2px;
-    
+    left: -2px;   
 }
 
 h1:before {
