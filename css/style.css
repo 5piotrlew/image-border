@@ -62,11 +62,10 @@ h1 {
     
 }
 
-h1:hover + .napis, .napis:hover, span:hover + .napis {
+.kontener.tlo:hover .napis {
     width: 700px;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.8);
-    
+    background-color: rgba(0, 0, 0, 0.8);    
     font-size: 50px;
 }
 
@@ -95,7 +94,7 @@ h1::before {
     border: 2px solid transparent;
 }
 
-h1:hover::before {
+.kontener.tlo:hover h1::before {
     animation: animate 1s linear forwards;
 }
 
@@ -141,7 +140,7 @@ h1::after {
     border: 2px solid transparent;
 }
 
-h1:hover::after {
+.kontener.tlo:hover h1::after {
     animation: animate2 1s linear forwards;
 }
 
@@ -187,7 +186,7 @@ span::before {
     border: 2px solid transparent;
 }
 
-span:hover::before {
+.kontener.tlo:hover h1 span::before {
     animation: animate3 1s linear forwards;
 }
 
@@ -233,7 +232,7 @@ span::after {
     border: 2px solid transparent;
 }
 
-span:hover::after {
+.kontener.tlo:hover h1 span::after {
     animation: animate4 1s linear forwards;
 }
 
